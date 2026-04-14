@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Zap, ArrowRight, Terminal, Cpu, ShieldCheck, Globe, Database } from "lucide-react";
-
+import Logo11 from "../assets/Logo11.png";
 // ───────── COMPONENT: SCROLL TO TOP ─────────
 export function ScrollToTop() {
   const { pathname } = useLocation();
@@ -85,24 +85,35 @@ export default function Navbar() {
 
             <div className="relative z-10 flex flex-col items-center">
               {/* CORE LOGO ENGINE */}
-              <div className="relative w-40 h-40 flex items-center justify-center">
-                <motion.div 
-                  animate={{ rotate: 360 }} 
-                  transition={{ duration: 12, repeat: Infinity, ease: "linear" }} 
-                  className="absolute inset-0 border-[1px] border-dashed border-cyan-500/30 rounded-[3rem]" 
-                />
-                <motion.div 
-                  animate={{ rotate: -360 }} 
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }} 
-                  className="absolute inset-4 border border-white/5 rounded-[2.5rem]" 
-                />
-                <div className="relative w-20 h-20 bg-white text-black flex items-center justify-center font-black text-3xl rounded-3xl shadow-[0_0_50px_rgba(255,255,255,0.2)]">
-                  TN
-                </div>
-              </div>
+            <div className="flex items-center justify-center">
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9, y: 20 }}
+    animate={{ opacity: 1, scale: 1, y: 0 }}
+    transition={{ duration: 0.6, ease: "easeOut" }}
+    className="flex items-center gap-3 group"
+  >
+    {/* LOGO IMAGE */}
+    <div className="flex items-center justify-center">
+      <img
+        src={Logo11}
+        alt="Perfect Digital Logo"
+        className="h-50 sm:h-50 w-auto object-contain transition-transform duration-300 group-hover:scale-105 mt-125px"
+      />
+    </div>
 
+    {/* BRAND TEXT (same as header) */}
+    <div className="flex flex-col leading-tight">
+      {/* <span className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+        Perfect<span className="text-[#391561]">Digital</span>
+      </span>
+      <span className="text-[10px] sm:text-xs font-semibold text-white/50 tracking-[0.25em] uppercase">
+        System Active
+      </span> */}
+    </div>
+  </motion.div>
+</div>
               {/* PROGRESS BAR UI */}
-              <div className="mt-16 w-72">
+              {/* <div className="mt-16 w-72">
                 <div className="flex justify-between items-end mb-3">
                   <div className="flex flex-col gap-1">
                     <span className="text-[9px] font-black uppercase tracking-[0.5em] text-cyan-500">System.Initialize</span>
@@ -117,10 +128,10 @@ export default function Navbar() {
                     className="absolute inset-y-0 left-0 bg-gradient-to-r from-cyan-600 to-cyan-400 shadow-[0_0_20px_#22d3ee]" 
                   />
                 </div>
-              </div>
+              </div> */}
               
               {/* NODE STATUS GRID - FIX: Recalibrated thresholds for 4 icons */}
-              <div className="mt-12 grid grid-cols-4 gap-8">
+              {/* <div className="mt-12 grid grid-cols-4 gap-8">
                 {[Cpu, ShieldCheck, Globe, Database].map((Icon, idx) => {
                   // Icon thresholds: 25%, 50%, 75%, 95%
                   const activeLevels = [25, 50, 75, 95];
@@ -136,7 +147,7 @@ export default function Navbar() {
                     </div>
                   );
                 })}
-              </div>
+              </div> */}
             </div>
 
             {/* DATA OVERLAY (Right) */}
@@ -152,26 +163,64 @@ export default function Navbar() {
       </AnimatePresence>
 
       {/* ───────── SECTION: MAIN HEADER ───────── */}
-      <header className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${scrolled || open ? "py-3 bg-slate-950/40 backdrop-blur-2xl border-b border-white/5" : "py-6 bg-transparent"}`}>
-        <div className="container mx-auto px-6 flex items-center justify-between">
-          <Link to="/" className="w-10 h-10 bg-white text-black flex items-center justify-center font-black rounded-xl active:scale-95 transition-transform">TN</Link>
+     <header
+  className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${
+    scrolled || open
+      ? "py-3 bg-slate-950/40 backdrop-blur-2xl border-b border-white/5"
+      : "py-6 bg-transparent"
+  }`}
+>
+  <div className="container mx-auto px-6 flex items-center justify-between">
 
-          <nav className="hidden md:flex items-center gap-8">
-            {NAV_LINKS.map((link) => (
-              <NavLink key={link.path} link={link} isActive={pathname === link.path} />
-            ))}
-            <Link to="/launch">
-              <button className="flex items-center gap-2 bg-white text-black text-[10px] font-black uppercase tracking-widest px-6 py-2.5 rounded-full hover:bg-cyan-400 transition-all shadow-xl shadow-white/5">
-                Launch <Zap size={12} fill="currentColor" />
-              </button>
-            </Link>
-          </nav>
+    {/* ✅ SIMPLE LOGO (REPLACED) */}
+    <Link 
+      to="/customer-home" 
+      className="flex items-center gap-3 group"
+      aria-label="Home"
+    >
+      <div className="flex items-center">
+        <img 
+          src={Logo11} 
+          alt="Perfect Digital Logo" 
+          className="h-17 sm:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
 
-          <button onClick={() => setOpen(true)} className="md:hidden p-3 rounded-2xl bg-white/5 border border-white/10 text-white active:bg-white/10">
-            <Menu size={20} />
-          </button>
-        </div>
-      </header>
+      {/* OPTIONAL TEXT (UNCOMMENT IF NEEDED) */}
+      {/*
+      <div className="flex flex-col leading-tight">
+        <span className="text-lg sm:text-xl font-extrabold tracking-tight text-white">
+          Perfect<span className="text-cyan-400">Digital</span>
+        </span>
+        <span className="text-[10px] sm:text-xs font-semibold text-white/60 tracking-wider uppercase">
+          Customer Portal
+        </span>
+      </div>
+      */}
+    </Link>
+
+    {/* NAV */}
+    <nav className="hidden md:flex items-center gap-8">
+      {NAV_LINKS.map((link) => (
+        <NavLink key={link.path} link={link} isActive={pathname === link.path} />
+      ))}
+      <Link to="/launch">
+        <button className="flex items-center gap-2 bg-white text-black text-[10px] font-black uppercase tracking-widest px-6 py-2.5 rounded-full hover:bg-cyan-400 transition-all shadow-xl shadow-white/5">
+          Launch <Zap size={12} fill="currentColor" />
+        </button>
+      </Link>
+    </nav>
+
+    {/* MOBILE MENU */}
+    <button
+      onClick={() => setOpen(true)}
+      className="md:hidden p-3 rounded-2xl bg-white/5 border border-white/10 text-white active:bg-white/10"
+    >
+      <Menu size={20} />
+    </button>
+
+  </div>
+</header>
 
       {/* ───────── SECTION: MOBILE DRAWER ───────── */}
       <AnimatePresence>

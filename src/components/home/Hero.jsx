@@ -84,7 +84,7 @@ export default function Hero() {
             transition={{ delay: 0.6 }}
             className="mt-12 flex flex-col sm:flex-row gap-4"
           >
-            <Button className="h-14 px-10 text-lg font-semibold bg-white text-black hover:bg-cyan-400 hover:scale-105 transition-all duration-300 rounded-xl shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)]">
+            <Button className="h-14 px-10 text-lg font-semibold bg-white text-[#391561] hover:bg-cyan-400 hover:scale-105 transition-all duration-300 rounded-xl shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)]">
               Deploy Solution
             </Button>
             <Button variant="outline" className="h-14 px-10 text-lg font-semibold border-white/10 bg-white/5 backdrop-blur-lg hover:bg-white/10 transition-all rounded-xl">

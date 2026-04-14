@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, ArrowUpRight, Facebook } from "lucide-react";
 import Container from "../components/common/Container";
 import { companyInfo } from "../data/companyInfo";
-
+import Logo11 from "../assets/Logo11.png"; // adjust path if needed
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -18,14 +18,31 @@ export default function Footer() {
           
           {/* --- BRAND COLUMN --- */}
           <div className="lg:col-span-5 space-y-6 md:space-y-8">
-            <Link to="/" className="flex items-center gap-2 group">
-              <div className="w-9 h-9 md:w-10 md:h-10 bg-white text-black flex items-center justify-center font-black rounded-xl group-hover:bg-cyan-400 transition-colors">
-                TN
-              </div>
-              <span className="text-xl md:text-2xl font-black tracking-tighter text-white uppercase">
-                {companyInfo.name}
-              </span>
-            </Link>
+            <Link 
+  to="/" 
+  className="flex items-center gap-3 group"
+  aria-label="Home"
+>
+  <div className="flex items-center">
+    <img 
+      src={Logo11} 
+      alt="Perfect Digital Logo" 
+      className="h-20 sm:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+    />
+  </div>
+
+  {/* OPTIONAL TEXT (same as header if needed) */}
+  {/*
+  <div className="flex flex-col leading-tight">
+    <span className="text-lg md:text-xl font-extrabold tracking-tight text-white">
+      Perfect<span className="text-cyan-400">Digital</span>
+    </span>
+    <span className="text-[10px] font-mono text-white/50 tracking-widest uppercase">
+      System Active
+    </span>
+  </div>
+  */}
+</Link>
             
             <p className="text-base md:text-lg text-slate-400 font-light leading-relaxed max-w-sm">
               Architecting the next generation of digital infrastructure with <span className="text-white">precision and security.</span>
