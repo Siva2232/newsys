@@ -10,15 +10,15 @@ import Container from "../common/Container";
 import Button from "../common/Button";
 
 const TRUST_ITEMS = [
-  { icon: Zap, text: "Average 2h response time" },
-  { icon: ShieldCheck, text: "NDA protected consultation" },
-  { icon: MessageSquare, text: "Direct Slack access for partners" },
+  { icon: Zap, text: "Fast response — we reply within hours" },
+  { icon: ShieldCheck, text: "Your ideas stay confidential" },
+  { icon: MessageSquare, text: "Direct communication with our team" },
 ];
 
 const CONTACT_INFO = [
-  { icon: Mail, label: "Email", value: "hello@technova.io" },
-  { icon: MapPin, label: "HQ", value: "San Francisco, CA" },
-  { icon: Clock, label: "Hours", value: "Mon–Fri, 9am–6pm PST" },
+  { icon: Mail, label: "Email", value: "hello@emprime.com" },
+  { icon: MapPin, label: "Location", value: "India" },
+  { icon: Clock, label: "Founded", value: "2025 — Startup" },
 ];
 
 const FLOATING_PARTICLES = Array.from({ length: 10 }, (_, i) => ({
@@ -165,18 +165,18 @@ export default function ContactForm() {
                   transition={{ duration: 3, repeat: Infinity, repeatDelay: 2 }}
                 />
                 <Sparkles className="relative w-3 h-3" />
-                <span className="relative">Inquiry Portal</span>
+                <span className="relative">Contact Emprime</span>
               </motion.span>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-[1.05] tracking-tighter">
-                READY TO{" "}
+                LET'S BUILD{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-white to-purple-400">
-                  SCALE UP?
+                  WITH EMPRIME
                 </span>
               </h1>
 
               <p className="mt-6 text-slate-400 text-base md:text-lg font-light leading-relaxed">
-                Connect with our engineering lead to discuss your system architecture and deployment roadmap.
+                Tell us about your CRM, website, or app idea. As a 2025 startup with 5+ projects delivered, we know how to move fast and build right.
               </p>
             </div>
 
@@ -236,7 +236,7 @@ export default function ContactForm() {
                 <InputField label="Corporate Email" type="email" placeholder="john@company.com" index={1} />
               </div>
 
-              <InputField label="Subject" type="text" placeholder="Project Infrastructure" index={2} />
+              <InputField label="Subject" type="text" placeholder="CRM / Website / Mobile App" index={2} />
 
               <motion.div
                 initial={{ opacity: 0, y: 16 }}
@@ -251,7 +251,7 @@ export default function ContactForm() {
                 <div className="relative">
                   <textarea
                     rows="4"
-                    placeholder="Tell us about your project goals..."
+                    placeholder="Describe your project — CRM, website, app, or custom software..."
                     onFocus={() => setFocusedTextarea(true)}
                     onBlur={() => setFocusedTextarea(false)}
                     className="w-full rounded-2xl bg-white/[0.04] px-6 py-4 text-white border border-white/[0.06] focus:border-cyan-400/50 outline-none transition-all placeholder:text-slate-600 resize-none"
@@ -269,7 +269,7 @@ export default function ContactForm() {
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                   <Button className="group relative w-full h-14 md:h-16 rounded-2xl bg-white text-black font-black uppercase tracking-widest text-xs flex items-center justify-center gap-3 overflow-hidden">
                     <span className="relative z-10 flex items-center gap-3 group-hover:text-white transition-colors duration-300">
-                      Initialize Consultation
+                      Send to Emprime
                       <Send size={16} />
                     </span>
                     <motion.span

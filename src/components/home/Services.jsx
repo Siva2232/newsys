@@ -272,7 +272,7 @@ export default function Services() {
               </span>
               <span className="h-px w-10 bg-gradient-to-r from-cyan-500 to-transparent" />
               <span className="text-[10px] md:text-xs font-black tracking-[0.4em] text-cyan-500 uppercase">
-                Core Capabilities
+                What We Build
               </span>
             </motion.div>
 
@@ -283,9 +283,9 @@ export default function Services() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-[1.05]"
             >
-              We Solve{" "}
+              Emprime{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-400 to-slate-600">
-                Hard Problems.
+                Services.
               </span>
             </motion.h2>
 
@@ -305,15 +305,14 @@ export default function Services() {
             transition={{ delay: 0.25, duration: 0.6 }}
           >
             <p className="text-lg md:text-xl text-slate-400 font-light leading-relaxed max-w-md">
-              Blending artistic engineering with clinical execution to deliver
-              software that defines industries.
+              From CRM dashboards to business websites and mobile apps — we help startups launch digital products that actually work.
             </p>
 
             <div className="mt-6 flex items-center gap-4">
               <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/[0.06] bg-white/[0.03]">
                 <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
                 <span className="text-xs font-mono text-slate-500 uppercase tracking-wider">
-                  {servicesData.length} Active Services
+                  5+ Projects Delivered
                 </span>
               </div>
             </div>
@@ -352,10 +351,10 @@ export default function Services() {
           <div className="relative flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
               <p className="text-sm font-mono text-cyan-500 uppercase tracking-widest mb-2">
-                Need something custom?
+                Need a CRM or website?
               </p>
               <h3 className="text-2xl md:text-3xl font-black text-white tracking-tight">
-                Let's architect your next system.
+                Let's build your next project with Emprime.
               </h3>
             </div>
             <motion.button

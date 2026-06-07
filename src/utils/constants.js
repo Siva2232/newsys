@@ -1,10 +1,11 @@
 // Company Information
 export const COMPANY_INFO = {
-  name: "TechNova IT Solutions",
-  tagline: "Building Scalable Digital Solutions",
-  email: "contact@technovait.com",
+  name: "Emprime",
+  tagline: "Digital Products for Growing Businesses",
+  email: "hello@emprime.com",
   phone: "+91 98765 43210",
-  address: "Bangalore, India",
+  address: "India",
+  founded: 2025,
 };
 
 // Navigation Links
@@ -20,34 +21,28 @@ export const SERVICES = [
   {
     id: 1,
     title: "Web Development",
-    description: "Modern, responsive, and scalable web applications.",
+    description: "Business websites and web apps built with React & Next.js.",
     icon: "Code",
   },
   {
     id: 2,
-    title: "Cloud Solutions",
-    description: "Secure and scalable cloud infrastructure.",
-    icon: "Cloud",
+    title: "Mobile App Development",
+    description: "Cross-platform Android & iOS applications.",
+    icon: "Smartphone",
   },
   {
     id: 3,
-    title: "Cyber Security",
-    description: "Protect your systems with enterprise-grade security.",
-    icon: "ShieldCheck",
-  },
-  {
-    id: 4,
-    title: "Mobile App Development",
-    description: "High-performance Android & iOS applications.",
-    icon: "Smartphone",
+    title: "Custom Software & CRM",
+    description: "CRM systems and tailor-made business software.",
+    icon: "Code",
   },
 ];
 
 // Social Media Links
 export const SOCIAL_LINKS = {
-  linkedin: "https://linkedin.com/company/technovait",
-  twitter: "https://twitter.com/technovait",
-  github: "https://github.com/technovait",
+  linkedin: "https://linkedin.com/company/emprime",
+  twitter: "https://twitter.com/emprime",
+  github: "https://github.com/emprime",
 };
 
 // Theme Settings

@@ -154,7 +154,7 @@ export default function TechStack() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500" />
             </span>
             <span className="text-[10px] md:text-xs font-black tracking-[0.4em] text-cyan-500 uppercase">
-              Our Ecosystem
+              Our Stack
             </span>
           </motion.div>
 
@@ -165,9 +165,9 @@ export default function TechStack() {
             transition={{ delay: 0.1, duration: 0.7 }}
             className="text-4xl md:text-6xl lg:text-7xl font-black text-white uppercase tracking-tighter leading-[0.95]"
           >
-            The Tools of{" "}
+            Tools We{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-400 to-slate-600">
-              Innovation
+              Build With
             </span>
           </motion.h2>
 
@@ -188,7 +188,7 @@ export default function TechStack() {
           >
             <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
             <span className="text-xs font-mono text-slate-500 uppercase tracking-wider">
-              {technologies.length}+ Production Technologies
+              Modern stack for every Emprime project
             </span>
           </motion.div>
         </div>

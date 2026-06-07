@@ -22,15 +22,15 @@ import {
 import Container from "../common/Container";
 
 const STATS = [
-  { label: "Systems Built", value: 250, suffix: "+", icon: Cpu },
-  { label: "Engineers", value: 45, suffix: "+", icon: Users },
-  { label: "Clients", value: 120, suffix: "+", icon: Building2 },
+  { label: "Projects Delivered", value: 5, suffix: "+", icon: Cpu },
+  { label: "Founded", value: 2025, suffix: "", icon: Users },
+  { label: "Core Services", value: 3, suffix: "", icon: Building2 },
 ];
 
 const PILLARS = [
-  "Zero-trust architecture by default",
-  "24/7 global incident response",
-  "Enterprise-grade compliance (SOC 2, ISO)",
+  "CRM systems & business websites",
+  "Mobile apps & custom software solutions",
+  "Startup-friendly pricing with hands-on support",
 ];
 
 const FLOATING_PARTICLES = Array.from({ length: 16 }, (_, i) => ({
@@ -226,9 +226,22 @@ export default function About() {
             </span>
             <span className="h-px w-8 md:w-12 bg-gradient-to-r from-cyan-500 to-transparent" />
             <span className="text-[10px] md:text-xs font-black tracking-[0.4em] text-cyan-500 uppercase">
-              Mission Report
+              About Emprime
             </span>
           </motion.div>
+
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1, duration: 0.7 }}
+            className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-6 md:mb-8"
+          >
+            A Startup Building{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-300 to-slate-600">
+              Real Products.
+            </span>
+          </motion.h2>
 
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -237,9 +250,9 @@ export default function About() {
             transition={{ delay: 0.15, duration: 0.6 }}
             className="text-lg md:text-xl text-slate-400 font-light leading-relaxed max-w-xl mt-0"
           >
-            We operate at the fringe of{" "}
+            Founded in 2025,{" "}
             <span className="text-white font-medium italic relative">
-              innovation and stability
+              Emprime
               <motion.span
                 className="absolute -bottom-0.5 left-0 h-px bg-cyan-500/50"
                 initial={{ width: 0 }}
@@ -247,8 +260,8 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.8, duration: 0.5 }}
               />
-            </span>
-            . Our task is simple: transform legacy complexity into frictionless cloud ecosystems.
+            </span>{" "}
+            is a young software startup delivering CRM platforms, business websites, and custom apps for growing companies. We've already shipped 5+ projects — and we're just getting started.
           </motion.p>
 
           {/* Pillars */}
@@ -286,7 +299,7 @@ export default function About() {
             className="group relative w-full sm:w-auto mt-10 md:mt-12 px-10 py-5 bg-white text-black font-black uppercase text-[10px] tracking-widest rounded-full overflow-hidden shadow-2xl shadow-cyan-500/20"
           >
             <span className="relative z-10 flex items-center justify-center gap-2 group-hover:text-white transition-colors duration-300">
-              Initiate Consultation
+              Work With Emprime
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </span>
             <motion.span
@@ -308,7 +321,7 @@ export default function About() {
             transition={{ duration: 1.2 }}
             className="absolute -top-6 -right-4 md:-top-12 md:-right-12 text-6xl md:text-9xl font-black text-white/[0.025] select-none pointer-events-none tracking-tighter"
           >
-            TECH
+            EMP
           </motion.div>
 
           {/* Decorative rings */}
@@ -398,11 +411,11 @@ export default function About() {
                 />
                 <Shield className="w-3.5 h-3.5 text-emerald-400" />
                 <span className="text-[8px] md:text-[10px] font-black text-white uppercase tracking-widest">
-                  Integrity
+                  Delivered
                 </span>
               </div>
-              <p className="text-xl md:text-2xl font-black text-white mb-0.5">99.9%</p>
-              <p className="text-[10px] md:text-xs text-slate-500 font-medium">Fault Tolerance</p>
+              <p className="text-xl md:text-2xl font-black text-white mb-0.5">5+</p>
+              <p className="text-[10px] md:text-xs text-slate-500 font-medium">Projects Shipped</p>
             </motion.div>
           </motion.div>
 
@@ -422,14 +435,14 @@ export default function About() {
               <div className="flex items-center gap-2 mb-2">
                 <Lock className="w-3.5 h-3.5 text-cyan-400" />
                 <span className="text-[8px] md:text-[10px] font-black text-white uppercase tracking-widest">
-                  Security
+                  Quality
                 </span>
               </div>
               <div className="flex items-center gap-2">
                 <Activity className="w-4 h-4 text-cyan-400" />
-                <span className="text-sm font-bold text-white font-mono">AES-256</span>
+                <span className="text-sm font-bold text-white font-mono">100%</span>
               </div>
-              <p className="text-[9px] text-slate-500 mt-1">End-to-end encrypted</p>
+              <p className="text-[9px] text-slate-500 mt-1">Client-focused delivery</p>
             </motion.div>
           </motion.div>
         </div>

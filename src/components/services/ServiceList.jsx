@@ -19,24 +19,24 @@ import Container from "../common/Container";
 const servicesData = [
   {
     id: 1,
-    title: "Application Development",
-    desc: "Scalable, secure web applications engineered for performance and long-term growth.",
+    title: "Web Development",
+    desc: "Professional business websites, portfolios, and web apps — responsive, fast, and built to grow your brand online.",
     icon: Code,
-    features: ["React & Next.js", "Responsive Design", "SEO Optimized", "High Performance"],
+    features: ["Business Websites", "React & Next.js", "SEO Optimized", "Mobile Responsive"],
   },
   {
     id: 2,
     title: "Mobile App Development",
-    desc: "High-performance iOS & Android apps with native-quality UX and speed.",
+    desc: "Cross-platform Android & iOS apps with polished UX — keep your customers connected wherever they are.",
     icon: Smartphone,
-    features: ["Android & iOS", "React Native", "Flutter", "App Store Deployment"],
+    features: ["Android & iOS", "React Native", "App Store Ready", "Push Notifications"],
   },
   {
     id: 3,
-    title: "Custom Software Solutions",
-    desc: "Tailor-made software built to match your exact business workflows and goals.",
+    title: "Custom Software & CRM",
+    desc: "Tailor-made CRM systems and business software to manage leads, clients, inventory, and daily operations.",
     icon: Layers,
-    features: ["Enterprise Apps", "CRM & ERP", "API Integration", "Secure Architecture"],
+    features: ["CRM Dashboards", "Lead Management", "Admin Panels", "API Integration"],
   },
 ];
 
@@ -206,25 +206,25 @@ export default function ServiceList() {
               </span>
               <span className="h-px w-10 bg-gradient-to-r from-cyan-500 to-transparent" />
               <span className="text-[10px] md:text-xs font-black tracking-[0.4em] text-cyan-500 uppercase">
-                Engineered Solutions
+                Emprime Services
               </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-[1.05] mb-6">
-              The Future of{" "}
+              CRM, Websites &{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-300 to-slate-600">
-                Infrastructure
+                Custom Apps
               </span>
             </h1>
 
             <p className="text-lg md:text-xl text-slate-400 font-light leading-relaxed max-w-2xl mb-8">
-              Enterprise-grade services built for scale, security, and speed — from MVP to global deployment.
+              Emprime delivers digital products for startups and businesses — from CRM dashboards to full-stack web and mobile applications. 5+ projects shipped since 2025.
             </p>
 
             <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/[0.06] bg-white/[0.03] w-fit">
               <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
               <span className="text-xs font-mono text-slate-500 uppercase tracking-wider">
-                {servicesData.length} Core Service Lines
+                Founded 2025 · Startup
               </span>
             </div>
           </motion.div>
@@ -268,10 +268,10 @@ export default function ServiceList() {
             <div className="relative flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div>
                 <p className="text-sm font-mono text-cyan-500 uppercase tracking-widest mb-2">
-                  Built for Global Scale
+                  Built by Emprime
                 </p>
                 <h3 className="text-2xl md:text-3xl font-black text-white tracking-tight">
-                  Need a custom architecture?
+                  Need a CRM, website, or custom app?
                 </h3>
               </div>
               <motion.button
@@ -291,7 +291,7 @@ export default function ServiceList() {
             viewport={{ once: true }}
             className="mt-12 text-center text-slate-600 text-[10px] font-bold uppercase tracking-[0.3em]"
           >
-            Standardized Protocols <span className="mx-4 text-slate-800">|</span> Enterprise Ready
+            CRM · Websites · Apps <span className="mx-4 text-slate-800">|</span> Emprime 2025
           </motion.p>
         </Container>
       </section>

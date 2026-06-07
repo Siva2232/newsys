@@ -8,22 +8,22 @@ import {
 } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import Tilt from "react-parallax-tilt";
-import { ArrowRight, Play, Zap, Globe, Shield, ChevronDown } from "lucide-react";
+import { ArrowRight, Play, Rocket, FolderKanban, Calendar, ChevronDown } from "lucide-react";
 import Container from "../common/Container";
 import Button from "../common/Button";
 
 const TERMINAL_LINES = [
-  { text: "$ infra deploy --region global --edge", delay: 0 },
-  { text: "✓ Provisioning 847 edge nodes...", delay: 800, accent: "cyan" },
-  { text: "✓ SSL/TLS certificates auto-renewed", delay: 1400, accent: "green" },
-  { text: "✓ Zero-downtime migration complete", delay: 2000, accent: "green" },
-  { text: "→ Live at https://app.yourinfra.io", delay: 2600, accent: "purple" },
+  { text: "$ emprime build --project crm-dashboard", delay: 0 },
+  { text: "✓ CRM modules configured...", delay: 800, accent: "cyan" },
+  { text: "✓ Business website deployed", delay: 1400, accent: "green" },
+  { text: "✓ Client portal live & tested", delay: 2000, accent: "green" },
+  { text: "→ Live at https://app.emprime.com", delay: 2600, accent: "purple" },
 ];
 
 const STATS = [
-  { value: "99.99%", label: "Uptime SLA", icon: Shield },
-  { value: "<12ms", label: "Global Latency", icon: Zap },
-  { value: "180+", label: "Edge Regions", icon: Globe },
+  { value: "5+", label: "Projects Delivered", icon: FolderKanban },
+  { value: "2025", label: "Founded", icon: Calendar },
+  { value: "3", label: "Core Services", icon: Rocket },
 ];
 
 const FLOATING_PARTICLES = Array.from({ length: 24 }, (_, i) => ({
@@ -152,8 +152,8 @@ export default function Hero() {
     return () => timers.forEach(clearTimeout);
   }, []);
 
-  const headlineWords = ["The", "Future", "of"];
-  const highlightWord = "Infrastructure";
+  const headlineWords = ["We", "Build", "Digital"];
+  const highlightWord = "Products.";
 
   return (
     <section
@@ -237,10 +237,10 @@ export default function Hero() {
                 animate={{ scale: [1, 1.4, 1] }}
                 transition={{ duration: 1.5, repeat: Infinity }}
               />
-              New
+              Est. 2025
             </span>
             <span className="relative text-sm text-slate-300 font-medium">
-              v4.0 Enterprise Engine is now live
+              Emprime — startup building CRM, websites & apps
             </span>
             <ArrowRight className="relative w-3.5 h-3.5 text-slate-500 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" />
           </motion.div>
@@ -271,10 +271,9 @@ export default function Hero() {
             transition={{ delay: 0.55, duration: 0.7 }}
             className="mt-8 text-lg md:text-xl text-slate-400 font-light leading-relaxed max-w-2xl"
           >
-            Stop managing servers and start building. Our platform automates the
-            complexity of global scaling with{" "}
+            Emprime helps startups and businesses launch{" "}
             <span className="text-white font-medium relative">
-              zero-latency
+              CRM systems, websites & custom software
               <motion.span
                 className="absolute -bottom-0.5 left-0 h-px bg-cyan-500/60"
                 initial={{ width: 0 }}
@@ -282,7 +281,7 @@ export default function Hero() {
                 transition={{ delay: 1.2, duration: 0.6 }}
               />
             </span>{" "}
-            edge nodes.
+            — fast, clean, and built to grow.
           </motion.p>
 
           {/* Stats */}
@@ -318,7 +317,7 @@ export default function Hero() {
             <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
               <Button className="group relative h-14 px-10 text-lg font-semibold bg-white text-[#391561] hover:bg-cyan-400 rounded-xl shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] overflow-hidden">
                 <span className="relative z-10 flex items-center gap-2">
-                  Deploy Solution
+                  Start Your Project
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
                 <motion.span
@@ -335,7 +334,7 @@ export default function Hero() {
               >
                 <span className="flex items-center gap-2">
                   <Play className="w-4 h-4 fill-current" />
-                  Book Architecture Call
+                  View Our Work
                 </span>
               </Button>
             </motion.div>
@@ -398,7 +397,7 @@ export default function Hero() {
                     <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
                   </div>
                   <div className="text-[10px] md:text-xs text-slate-500 font-mono tracking-widest">
-                    DEPLOYMENT_TERMINAL.EXE
+                    EMPRIME_BUILD.EXE
                   </div>
                   <motion.div
                     animate={{ opacity: [0.4, 1, 0.4] }}
@@ -426,9 +425,9 @@ export default function Hero() {
 
                   {/* Metrics panel */}
                   <div className="md:col-span-2 p-5 md:p-6 bg-black/40 space-y-5">
-                    <MetricBar label="CPU Load" value="23%" delay={1.4} textColor="text-cyan-400" barColor="bg-cyan-400" />
-                    <MetricBar label="Memory" value="67%" delay={1.6} textColor="text-purple-400" barColor="bg-purple-400" />
-                    <MetricBar label="Network" value="91%" delay={1.8} textColor="text-emerald-400" barColor="bg-emerald-400" />
+                    <MetricBar label="Design" value="100%" delay={1.4} textColor="text-cyan-400" barColor="bg-cyan-400" />
+                    <MetricBar label="Development" value="85%" delay={1.6} textColor="text-purple-400" barColor="bg-purple-400" />
+                    <MetricBar label="Launch Ready" value="92%" delay={1.8} textColor="text-emerald-400" barColor="bg-emerald-400" />
 
                     <div className="pt-2 grid grid-cols-2 gap-2">
                       {[1, 2, 3, 4].map((n, i) => (

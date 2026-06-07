@@ -20,23 +20,23 @@ import Container from "../components/common/Container";
 
 const companyData = {
   description:
-    "We are a precision-engineering collective. While we operate with startup speed, we build with enterprise-grade resilience. Our mission is to architect systems that don't just scale—they evolve.",
+    "Emprime is a software startup founded in 2025. We build CRM systems, business websites, mobile apps, and custom software for startups and growing businesses — with 5+ projects already delivered and more on the way.",
   stats: [
-    { label: "Systems Built", value: 12, suffix: "+" },
-    { label: "Uptime Rate", value: 99.99, suffix: "%", decimals: 2 },
-    { label: "Response Time", value: 45, suffix: "ms" },
-    { label: "Code Coverage", value: 100, suffix: "%" },
+    { label: "Projects Delivered", value: 5, suffix: "+" },
+    { label: "Core Services", value: 3, suffix: "" },
+    { label: "Founded", value: 2025, suffix: "" },
+    { label: "Client Focus", value: 100, suffix: "%" },
   ],
   founders: [
     {
-      name: "Alex Rivet",
-      role: "CEO / Engineering",
-      img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      name: "Emprime Team",
+      role: "Founders & Builders",
+      img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=400&fit=crop",
     },
     {
-      name: "Sarah Chen",
-      role: "CTO / Systems",
-      img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+      name: "Development Squad",
+      role: "Engineering & Design",
+      img: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=400&fit=crop",
     },
   ],
 };
@@ -44,23 +44,23 @@ const companyData = {
 const roadmap = [
   {
     icon: Rocket,
-    stage: "Today",
-    title: "Agile Sprints",
-    desc: "Building core protocols and securing early-adopter partnerships.",
+    stage: "2025",
+    title: "Launch & First Clients",
+    desc: "Founded Emprime, delivered 5+ projects including CRM systems, business websites, and custom apps.",
     accent: "from-cyan-500/20 to-cyan-500/5",
   },
   {
     icon: Target,
-    stage: "2027",
-    title: "Market Expansion",
-    desc: "Integrating AI-driven automation across global cloud regions.",
+    stage: "2026",
+    title: "Grow the Portfolio",
+    desc: "Expand our client base, launch SaaS products, and deepen expertise in CRM and e-commerce solutions.",
     accent: "from-purple-500/20 to-purple-500/5",
   },
   {
     icon: Award,
-    stage: "2030",
-    title: "Industry Lead",
-    desc: "Setting the global standard for secure, autonomous infrastructure.",
+    stage: "2027+",
+    title: "Scale Emprime",
+    desc: "Build a recognized brand in custom software — serving startups, SMEs, and enterprises across India and beyond.",
     accent: "from-indigo-500/20 to-indigo-500/5",
   },
 ];
@@ -217,15 +217,14 @@ export default function About() {
                 </span>
                 <span className="h-px w-8 bg-cyan-500" />
                 <span className="text-xs font-black tracking-[0.4em] text-cyan-500 uppercase">
-                  Phase 01: Genesis
+                  Founded 2025
                 </span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black leading-[1.05] tracking-tighter mb-8">
-                SMALL TEAM.
-                <br />
+                WE ARE{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-400 to-slate-600">
-                  MASSIVE IMPACT.
+                  EMPRIME.
                 </span>
               </h1>
 
@@ -300,10 +299,10 @@ export default function About() {
               viewport={{ once: true }}
               className="text-4xl md:text-6xl font-black tracking-tighter mb-4"
             >
-              OUR EVOLUTION
+              OUR JOURNEY
             </motion.h2>
             <p className="text-slate-500 uppercase tracking-widest text-xs font-bold">
-              From MVP to Market Standard
+              From startup launch to scaling impact
             </p>
           </div>
 
@@ -325,9 +324,9 @@ export default function About() {
             viewport={{ once: true }}
             className="mb-12 md:mb-16 max-w-xl"
           >
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4">THE ARCHITECTS</h2>
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4">THE EMPRIME TEAM</h2>
             <p className="text-slate-400 italic text-lg">
-              "We are building the tools we wished we had 10 years ago."
+              "We started Emprime in 2025 to build the software tools businesses actually need."
             </p>
           </motion.div>
 
@@ -404,16 +403,16 @@ export default function About() {
             />
 
             <h2 className="relative z-10 text-3xl md:text-5xl lg:text-7xl font-black tracking-tighter text-white mb-8">
-              BE PART OF THE
+              GROW WITH
               <br />
-              FOUNDATION.
+              EMPRIME.
             </h2>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               className="relative z-10 group inline-flex items-center gap-2 px-10 py-5 bg-white text-black font-black uppercase tracking-widest text-xs rounded-full shadow-2xl"
             >
-              Partner With Us
+              Start a Project
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </motion.button>
           </motion.div>

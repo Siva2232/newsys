@@ -9,30 +9,30 @@ import Container from "../common/Container";
 
 const points = [
   {
-    title: "Veteran Engineering",
+    title: "Startup-Focused",
     description:
-      "Architecting resilient systems that handle millions of requests without breaking a sweat.",
+      "We understand lean budgets and tight timelines — every project is scoped for real business impact, not bloated enterprise overhead.",
     icon: Award,
     accent: "from-cyan-500/20 to-cyan-500/5",
   },
   {
-    title: "Future-Proof Stack",
+    title: "Modern Tech Stack",
     description:
-      "Deploying high-performance Rust and Go microservices for maximum horizontal scalability.",
+      "React, Next.js, Node.js, and mobile-first tools — the same stack used by today's fastest-growing startups.",
     icon: Layers,
     accent: "from-purple-500/20 to-purple-500/5",
   },
   {
-    title: "Strategic Partnership",
+    title: "Hands-On Partnership",
     description:
-      "We don't just take orders; we act as your fractional CTO to ensure long-term ROI.",
+      "You work directly with our builders. No middlemen, no hand-offs — just clear communication from kickoff to launch.",
     icon: Handshake,
     accent: "from-indigo-500/20 to-indigo-500/5",
   },
   {
-    title: "Precision Velocity",
+    title: "Fast Delivery",
     description:
-      "Automated CI/CD pipelines that turn ideas into production-ready features in hours.",
+      "We've shipped 5+ projects since 2025 — CRM systems, websites, and apps delivered on time and ready to use.",
     icon: Zap,
     accent: "from-emerald-500/20 to-emerald-500/5",
   },
@@ -219,7 +219,7 @@ export default function WhyChooseUs() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500" />
             </span>
             <span className="text-[10px] md:text-xs font-black tracking-[0.4em] text-cyan-500 uppercase">
-              The Engineering Standard
+              Why Emprime
             </span>
           </motion.div>
 
@@ -230,9 +230,9 @@ export default function WhyChooseUs() {
             transition={{ delay: 0.1, duration: 0.7 }}
             className="text-4xl md:text-6xl lg:text-7xl font-black text-white uppercase tracking-tighter leading-[0.95]"
           >
-            Why the best{" "}
+            Built for{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-400 to-slate-600">
-              choose us
+              startups
             </span>
           </motion.h2>
 
@@ -290,12 +290,12 @@ export default function WhyChooseUs() {
                 transition={{ delay: 0.65 }}
                 className="w-10 h-10 md:w-12 md:h-12 rounded-full border-4 border-[#020617] bg-cyan-500 flex items-center justify-center text-[10px] md:text-xs font-black text-black"
               >
-                +12K
+                5+
               </motion.div>
             </div>
             <p className="text-slate-400 font-medium tracking-wide text-sm md:text-base">
-              Trusted by tech leads from{" "}
-              <span className="text-white font-bold">Vercel, Stripe, and SpaceX.</span>
+              Projects delivered since 2025 —{" "}
+              <span className="text-white font-bold">CRM systems, websites & custom apps</span> for startups and growing businesses.
             </p>
           </div>
         </motion.div>

@@ -1,30 +1,39 @@
 /**
- * Company information and branding data
+ * Emprime — startup company branding & content
  * Used across Navbar, Footer, SEO, and Contact sections
  */
 
 export const companyInfo = {
-  name: "TechNova IT Solutions",
-  tagline: "Innovative Technology. Real Business Impact.",
+  name: "Emprime",
+  tagline: "Digital Products for Growing Businesses.",
+  founded: 2025,
   description:
-    "TechNova IT Solutions is a leading technology company delivering scalable, secure, and innovative digital solutions to businesses worldwide.",
+    "Emprime is a startup software company founded in 2025. We design and deliver CRM systems, business websites, mobile apps, and custom software — helping founders and teams launch faster with clean, modern technology.",
 
   contact: {
-    email: "contact@technovait.com",
+    email: "hello@emprime.com",
     phone: "+91 98765 43210",
-    address: "Bangalore, India",
+    address: "India",
   },
 
   socialLinks: {
-    linkedin: "https://linkedin.com/company/technovait",
-    twitter: "https://twitter.com/technovait",
-    github: "https://github.com/technovait",
+    linkedin: "https://linkedin.com/company/emprime",
+    twitter: "https://twitter.com/emprime",
+    github: "https://github.com/emprime",
   },
 
   stats: [
-    { label: "Projects Delivered", value: "150+" },
-    { label: "Happy Clients", value: "100+" },
-    { label: "Years Experience", value: "5+" },
-    { label: "Team Members", value: "30+" },
+    { label: "Projects Delivered", value: "5+" },
+    { label: "Services Offered", value: "3" },
+    { label: "Founded", value: "2025" },
+    { label: "Client Focus", value: "100%" },
+  ],
+
+  projectTypes: [
+    "CRM Systems",
+    "Business Websites",
+    "E-Commerce Stores",
+    "Mobile Applications",
+    "Custom Software",
   ],
 };

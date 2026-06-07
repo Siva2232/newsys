@@ -11,9 +11,9 @@ import Container from "../common/Container";
 import Button from "../common/Button";
 
 const STATS = [
-  { value: "99.9%", label: "Uptime" },
-  { value: "24/7", label: "Support" },
-  { value: "<50ms", label: "Latency" },
+  { value: "5+", label: "Projects" },
+  { value: "2025", label: "Founded" },
+  { value: "100%", label: "Dedicated" },
 ];
 
 const FLOATING_PARTICLES = Array.from({ length: 10 }, (_, i) => ({
@@ -161,15 +161,14 @@ export default function CTA() {
               </motion.span>
 
               <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tighter mb-5 md:mb-8">
-                Ready to Build{" "}
+                Ready to Launch{" "}
                 <span className="block sm:inline mt-1 sm:mt-0 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-white to-purple-400">
-                  The Next Big Thing?
+                  With Emprime?
                 </span>
               </h2>
 
               <p className="text-base md:text-xl text-slate-400 font-light leading-relaxed max-w-2xl mx-auto mb-8 md:mb-12">
-                Join 150+ companies already scaling their infrastructure with our
-                automated architecture.
+                Whether you need a CRM, a business website, or a custom app — let's turn your idea into a product. Join our growing list of clients since 2025.
               </p>
 
               {/* Actions */}
@@ -199,7 +198,7 @@ export default function CTA() {
                   className="flex items-center gap-2 text-white font-semibold text-base md:text-lg transition-colors py-2"
                 >
                   <Play className="w-4 h-4 fill-current" />
-                  Talk to an Expert
+                  Talk to Emprime
                   <ArrowRight className="w-4 h-4" />
                 </motion.button>
               </div>
